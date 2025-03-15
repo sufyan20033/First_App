@@ -43,6 +43,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       body: Column(
+         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('New Flutter App'),
           BigCard(pair: pair),  
