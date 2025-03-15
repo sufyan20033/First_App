@@ -39,16 +39,15 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
-    var pair = appState.current;  
+    var pair = appState.current;
 
     return Scaffold(
       body: Center(
         child: Column(
-           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('New Flutter App'),
-            BigCard(pair: pair),  
-        
+            BigCard(pair: pair),
+            SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 appState.getNext();
